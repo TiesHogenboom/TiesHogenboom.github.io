@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.slide {
+    width: 100vw;
+    height: 100vh;
+    
+}
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 400vw;
+    transform: rotate(90deg) translatey(-100vh);
+    transform-origin: top left;
+    font-family: 'Square Peg', cursive;
+}
+.one {
+    background: #efdede
+}
+.two {
+    background: #172258
+}
+.three {
+    background: #e89a9a
+}
+.four {
+    background: #6d0606
+}
+.outer-wrapper {
+    width: 100vh;
+    height: 100vw;
+    transform: rotate(-90deg) translatex(-100vh);
+    transform-origin: top left;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    
+}
+::-webkit-scrollbar {
+    display: none;
+}
