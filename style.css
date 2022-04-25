@@ -8,25 +8,92 @@ body {
     height: 100vh;
     
 }
+.top {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top:400px;
+    font-size: 30px;
+    background-color: rgb(255, 255, 255);
+}
+.top-two {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top:100px;
+    font-size: 30px;
+    background-color: rgb(255, 255, 255);
+}
+
+.top-left {
+    margin: 10px
+    
+}
+.image-size{
+    width:600px;
+}
+.title{
+    position: absolute;
+    padding-left:500px;
+}
+.title h1 {
+    font-size: 120px;
+    background-color:#F2C9E0;
+    padding-left:80px;
+    padding-right:80px;
+}
+.title-bet{
+    position: absolute;
+    padding-left:500px;
+}
+.title-bet h1 {
+    font-size: 120px;
+    background-color:#F2C9E0;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.title-two{
+    position: absolute;
+    padding-left:500px;
+    padding-top: 200px;
+}
+.title-two h1 {
+    font-size: 120px;
+    background-color:#F2C9E0;
+    padding: 10px;
+}
+.inside {
+    width: 90vw;
+    height: 90vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vh;
+    background-color: white;
+    display:flex;
+    
+} 
+
 .wrapper {
     display: flex;
     flex-direction: row;
-    width: 400vw;
+    width: 500vw;
     transform: rotate(90deg) translatey(-100vh);
     transform-origin: top left;
     font-family: 'Square Peg', cursive;
 }
 .one {
-    background: #efdede
+    background: #D96690
 }
 .two {
-    background: #172258
+    background: #F28DB2
 }
 .three {
-    background: #e89a9a
+    background: #F2C9E0
 }
 .four {
-    background: #6d0606
+    background: #89C2d9
+}
+.five {
+    background:beige ;
 }
 .outer-wrapper {
     width: 100vh;
@@ -43,3 +110,12 @@ body {
 ::-webkit-scrollbar {
     display: none;
 }
+/* img {
+    width: auto;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vh;
+    <img src="portfolio desgins/intro.png" alt="n" class="">
+} */
