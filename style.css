@@ -1,99 +1,199 @@
-body {
-    margin: 0;
-    padding: 0;
+html, body {
+    margin:0px;
+    height:100%;
+    scroll-behavior: smooth;
 }
-
-.slide {
-    width: 100vw;
-    height: 100vh;
-    
-}
-
-.inside {
-    width: 90vw;
-    height: 90vh;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5vh;
-    background-color: white;
-    display:flex;
-    
-} 
-
-.wrapper {
-    display: flex;
-    flex-direction: row;
-    width: 400vw;
-    transform: rotate(90deg) translatey(-100vh);
-    transform-origin: top left;
-    font-family: 'Square Peg', cursive;
-}
-.one {
-    background: #00403F;
-}
-.two {
-    background: #03614A;
-}
-.three {
-    background: #FDD5BC;
-}
-.four {
-    background: #A65151;
-}
-.five {
-    background:#59272D;
-}
-.six {
-    background:#00403F;
-}
-.outer-wrapper {
-    width: 100vh;
-    height: 100vw;
-    transform: rotate(-90deg) translatex(-100vh);
-    transform-origin: top left;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    position: absolute;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    
-}
-::-webkit-scrollbar {
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
     display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+/* \/ \/ \/ Css and styling for bar and buttons inside \/ \/ \/ */
+#bar {
+    height:10vh;
+    background-color: rgb(87, 87, 87);
+    padding: 0; border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#525252 0 -3px 0 inset;
+    
 }
-
-* { box-sizing: border-box; }
-
-#content {
-  background-color: rgba(255, 255, 255);
-  padding: 0.5rem;
-  display: flex;
+#bartwo {
+    height:10vh;
+    background-color: rgb(87, 87, 87);
+    padding: 0; border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: right;
 }
-
-#left,
-#right {
-  background-color: rgba(255, 255, 255, 0.5);
-  max-width: 45vw;
-  flex-grow: 1;
-  color: rgb(0, 0, 0);
-  padding:3px
+.buttonbar {
+  align-items: center;
+  appearance: none;
+  background-color: #FCFCFD;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395A;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+  margin-left: 10px;
 }
+.buttonbar:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+.buttonbar:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+.buttonbar:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+/* /\ /\ /\ Css and styling for bar and buttons inside /\ /\ /\*/
+/*--------------------------------------------------------------*/
+/* \/ \/ \/ Sections \/ \/ \/ */
+#front {
+    height: 677.1px;
+    background-color: rgb(112, 112, 112);
+    padding: 0; border: 0;
+    display: flex;
+    text-align:center;
+    position: relative;
+    justify-content: right;
+    
+    
+}
+#spaceone { /* About me */
+    height: 677.1px;
+    background-color: rgb(235, 235, 235);
+    padding: 0; border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+#spacetwo{ /* Projects */
+    height: 1500px;
+    background-color: rgb(112, 112, 112);
+    padding: 0; border: 0;
+    display:block;
+    justify-content: left;
+}
+#spacethree { /* Future */
+    height: 677.1px;
+    background-color: rgb(235, 235, 235);
+    padding: 0; border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+#footer {
+    height:40vh;
+    background-color: rgb(87, 87, 87);
+    padding: 0; border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+/* /\ /\ /\ Css and styling for bar and buttons inside /\ /\ /\*/
+/*--------------------------------------------------------------*/
 
-.picture1 {
-    max-width: 100%;
-    max-height: 100%;
+#projects {
+    height:400px;
+    width: 1480px;
+    background-color: rgb(87, 87, 87);
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#525252 0 -3px 0 inset;
+    margin-bottom: 20px;
+    margin-left: 30px;
     
 }
 
-.proj{
-    max-width: 50%;
-    max-height: 50%;
+#projectsimg {
+    padding: 10px;
+    padding-left: 15px;
+    width: 370px;
+    height: 370px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
 }
 
-h1{
-    font-size: 80px;
+#aboutme {
+    height:630px;
+    width: 1480px;
+    background-color: rgb(235, 235, 235);
+    display: flex;
+    justify-content: left;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    font-family: "JetBrains Mono",monospace;
+    color: #36395A;
+    font-size:x-large;
+    padding: 10px;
 }
-h2{
-    font-size: 40px;
+
+
+#footertext {
+    height:200px;
+    width: 1480px;
+    display: flex;
+    justify-content: left;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    font-family: "JetBrains Mono",monospace;
+    color: #36395A;
+    font-size:x-large;
+    padding: 10px;
+}
+
+.frontimg {
+    height: 800px;
+    width: 800px;
+    margin:50px;
+}
+
+#frontme {
+    height:130px;
+    width: 1480px;
+    background-color: rgb(235, 235, 235);
+    display: flex;
+    justify-content: left;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    font-family: "JetBrains Mono",monospace;
+    color: #36395A;
+    font-size:xx-large;
+    margin: 60px;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#525252 0 -3px 0 inset;
 }

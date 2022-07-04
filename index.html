@@ -1,179 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="style.css" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Square+Peg&display=swap" rel="stylesheet">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
 </head>
 <body>
-
-
-
-    <div class="outer-wrapper">
-        <div class="wrapper">
-            <div class ="slide one">
-                <div class="inside">
-                    <div id="content">
-                        <div id="left">
-                        <img src="https://media-exp1.licdn.com/dms/image/C4D03AQEHF35dvW4cJQ/profile-displayphoto-shrink_400_400/0/1635102466505?e=1655942400&v=beta&t=uL7F_JDzDjc-6bR6TpYoLyPzBmK-LHIgZPg9IAyY6LQ" alt="" class="picture1">
-                        </div>
-                        <div id="right">
-                            <h1>Ties Hogenboom</h1>
-                            <h1>Software Delevoper</h1>
-                        <div id="text2"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class ="slide two">
-                <div class="inside">
-                    <div id="content">
-                        <div id="left"> 
-                            <h1>About me:</h1>
-                            <h2>Mijn naam is Ties Hogenboom. Ik ben 18 jaar oud en studeer op het mediacollege in Amsterdam</h2>
-                            <h2>Mijn intresses zijn: Sporten, muziek maken, en reizen.</h2>
-                            <h2>Ik wil graag meer leren over app-development en nieuwe tech leren. Ik hoop dat ik in mijn 3e jaar kan stagelopen in een bedrijf met app developers</h2>
-                        </div>
-                        <div id="right">
-                            <img src="https://cdn.discordapp.com/attachments/792030388775944193/968067600317825075/IMG-20220422-WA0003.jpg" alt="" class="picture1" style="float:right;">
-
-                        <div id="text2"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class ="slide three">
-                <div class="inside">
-                    <div id="content">
-                            <div id="left">
-                            <a href="url"><img src="https://cdn.discordapp.com/attachments/792030388775944193/968074530889277500/unknown.png" alt="" class="proj" style="max-width: 48%;"></a>
-                            <a href="url"><img src="https://cdn.discordapp.com/attachments/792030388775944193/968075039155056640/unknown.png" alt="" class="proj" style="max-width: 51%; padding-left: 15px;" ></a>
-                            <div id="text1"><h1 style="padding-left: 10px; word-spacing: 200px;">NFC Wordpress </h1></div>
-                        </div>
-                        
-                            <div id="right">
-                                <a href="url"><img src="https://cdn.discordapp.com/attachments/792030388775944193/968075510410276864/unknown.png" alt="" class="proj" style="max-width: 49%;"></a>
-                                <div id="text2"><h1>HTML</h1></div>
-                            </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class ="slide four">
-                <div class="inside">
-                    <div id="content">
-                        <div id="left">
-                        <a href="url"><img src="data:image/png;base64,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" alt="" class="picture1"></a>
-                        <a href="url"><img src="https://icons-for-free.com/download-icon-find+in+linked+linkedin+search+socialmedia+icon-1320168234946219233_512.png" style="max-width: 20%;" alt="" class="picture1"></a>
-                        </div>
-                    
-                        <div id="right">
-                        <div id="text2"><h1>Socials</h1><h2>30688@ma-web.com</h2></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div id="front">
+        <div class="frontimg"><img src="https://media-exp2.licdn.com/dms/image/C4D03AQEHF35dvW4cJQ/profile-displayphoto-shrink_400_400/0/1635102466505?e=1662595200&v=beta&t=QTJMwxUn4MF0zAc1Qau1b4s5qZT5S_3BwzS5x4373UI" alt=""></div>
+        <div id="frontme">
+            <p1>Ties Hogenboom <br> <br>
+                Software Developer
+            </p1>
         </div>
     </div>
-
-
+    <div id="bar"> <!-- Bar with buttons -->
+        <a href="#spaceone"><button class="buttonbar" role="button">About me</button></a>
+        <a href="#spacetwo"><button class="buttonbar" role="button">Projects</button></a>
+        <a href="#spacethree"><button class="buttonbar" role="button">Future</button></a>
+        <a href="#footer"><button class="buttonbar" role="button">Contact</button></a>
+        <a href="#front"><button class="buttonbar" role="button">Up</button></a>
+    </div>
     
-
-
-<!--
-
-    <div class="outer-wrapper">
-        <div class="wrapper">
-                <div class ="slide one">
-                    <div class="inside">
-                        <div class="top-left">
-                            <img src="https://media-exp1.licdn.com/dms/image/C4D03AQEHF35dvW4cJQ/profile-displayphoto-shrink_400_400/0/1635102466505?e=1655942400&v=beta&t=uL7F_JDzDjc-6bR6TpYoLyPzBmK-LHIgZPg9IAyY6LQ" alt="-" class="image">
-                        </div>
-                        <div class="title">
-                            <h1>Ties Hogenboom</h1>
-                        </div>
-                        <div class="title-two">
-                            <h1>Software Developer</h1>
-                        </div>
-    
-                    </div>
-                </div>
-
-
-
-                <div class ="slide two">
-                    <div class="inside">
-                        <div class="title-bet">
-                            <h1>Intro</h1>
-                        </div>
-
-                        <div class="top">
-                        <h1>Mijn naam is Ties Hogenboom, ik ben 18 jaar oud en geboren in nederland. Ik studeer momenteel op het Mediacollege in Amsterdam</h1>
-                        </div>     
-                    </div>
-                </div>
-                <div class ="slide three">
-                    <div class="inside">
-                        <div class="top-two">
-                        <h1>Mijn intresses zijn: muziek maken, sporten, en dagdromen</h1>
-                        <h1>Ik ben op dit moment erg geinterreseerd in het maken van mobile apps. Ik wil ook een stage hierin doen volgend jaar.</h1>
-                        </div>     
-                    </div>
-                </div>
-                <div class ="slide four">
-                    <div class="inside">
-                        <div class="top-left">
-                            <img src="https://media-exp1.licdn.com/dms/image/C4D03AQEHF35dvW4cJQ/profile-displayphoto-shrink_400_400/0/1635102466505?e=1655942400&v=beta&t=uL7F_JDzDjc-6bR6TpYoLyPzBmK-LHIgZPg9IAyY6LQ" alt="-" class="image">
-                            <img src="https://media-exp1.licdn.com/dms/image/C4D03AQEHF35dvW4cJQ/profile-displayphoto-shrink_400_400/0/1635102466505?e=1655942400&v=beta&t=uL7F_JDzDjc-6bR6TpYoLyPzBmK-LHIgZPg9IAyY6LQ" alt="-" class="image">
-                        </div>
-
-                        <div class="top">
-                        <h1>Projecten</h1>
-                        <h1>Web / App / Nfc</h1>
-                        </div>     
-                    </div>
-                </div>
-                <div class ="slide five">
-                    <div class="inside">
-                        <div class="top-left">
-                            <a href="https://www.linkedin.com/in/ties-hogenboom-4768a9156/">
-                            <img src="https://cdn2.downdetector.com/static/uploads/logo/Linkedin-Logo.png" alt="-" class="image-size">
-                            </a>
-                        
-                            <img src="https://cdn.vox-cdn.com/thumbor/8fWz6qpiMYMsZhY4vrc9Vhl5yL8=/0x110:1320x770/fit-in/1200x600/cdn.vox-cdn.com/uploads/chorus_asset/file/21939811/newgmaillogo.jpg" alt="-" class="image-size">
-                        </div>
-                        <div class="top">
-                        <h1>Socials</h1>
-                        </div>     
-                    </div>
-                </div>
-
-                <div class ="slide six">
-                    <div class="inside">
-                        <div class="top-left">
-                            <img src="https://media-exp1.licdn.com/dms/image/C4D03AQEHF35dvW4cJQ/profile-displayphoto-shrink_400_400/0/1635102466505?e=1655942400&v=beta&t=uL7F_JDzDjc-6bR6TpYoLyPzBmK-LHIgZPg9IAyY6LQ" alt="-" class="image">
-                        </div>
-                        <div class="title">
-                            <h1>Ties Hogenboom</h1>
-                        </div>
-                        <div class="title-two">
-                            <h1>Software Developer</h1>
-                        </div>
-
-
-                
-            </div>
+    <div id="spaceone">
+        <div id="aboutme">
+            <p1>
+                <br> <br> <br> <br> <br>
+                Mijn naam is Ties Hogenboom <br> <br>
+                Ik studeer Software Development en zit in het 2e jaar op het Media College Amsterdam. <br> <br>
+                In mijn vrije tijd doe ik veel muziek, werken en nieuwe skills leren. Ik vind het belangerijk om nieuwsgierig te zijn en om open te zijn aan nieuwe technieken en ideeen.
+                Ook sport ik elke week. Ik doe zelf workouts thuis als ik tijd heb en heb een zwarte band in Taekwondo.<br> <br>
+                Ik heb met school veel projecten gedaan voor web en een paar aan de game kant. Ik heb mij ook verdiept in het maken van apps en een paar test apps gemaakt.
+            </p1>
         </div>
     </div>
-
--->
- 
-</body>
+    <div id="bar"> <!-- Bar with buttons -->
+        <a href="#spaceone"><button class="buttonbar" role="button">About me</button></a>
+        <a href="#spacetwo"><button class="buttonbar" role="button">Projects</button></a>
+        <a href="#spacethree"><button class="buttonbar" role="button">Future</button></a>
+        <a href="#footer"><button class="buttonbar" role="button">Contact</button></a>
+        <a href="#front"><button class="buttonbar" role="button">Up</button></a>
+    </div>
+    <div id="spacetwo">
+        <div id="projects">
+            <img id="projectsimg" src="https://picsum.photos/370" alt="Image">
+        </div>
+        <div id="projects">
+            <img id="projectsimg" src="https://picsum.photos/370" alt="Image">
+        </div>
+        <div id="projects">
+            <img id="projectsimg" src="https://picsum.photos/370" alt="Image">
+        </div>
+    </div>
+    <div id="bar"> <!-- Bar with buttons -->
+        <a href="#spaceone"><button class="buttonbar" role="button">About me</button></a>
+        <a href="#spacetwo"><button class="buttonbar" role="button">Projects</button></a>
+        <a href="#spacethree"><button class="buttonbar" role="button">Future</button></a>
+        <a href="#footer"><button class="buttonbar" role="button">Contact</button></a>
+        <a href="#front"><button class="buttonbar" role="button">Up</button></a>
+    </div>
+    <div id="spacethree">
+        <div id="aboutme">
+            <p1>
+                <br> <br> <br> <br> <br>
+                <br> <br>
+                In de toekomst wil ik een stage plek vinden voor web of app. <br> <br>
+                Aan de web kant wil ik graag meer leren over het designen van websites<br> <br>
+                Voor de app kant wil ik mij graag verdiepen in het backend en het toepassen van verschillende templates en codeertalen.
+            </p1>
+        </div>
+    </div>
+    <div id="bar"> <!-- Bar with buttons -->
+        <a href="#spaceone"><button class="buttonbar" role="button">About me</button></a>
+        <a href="#spacetwo"><button class="buttonbar" role="button">Projects</button></a>
+        <a href="#spacethree"><button class="buttonbar" role="button">Future</button></a>
+        <a href="#footer"><button class="buttonbar" role="button">Contact</button></a>
+        <a href="#front"><button class="buttonbar" role="button">Up</button></a>
+    </div>
+    <div id="footer">
+        <div id="footertext">
+            <p1>
+                <a href="https://github.com/TiesHogenboom">Github</a> <br> <br>
+                <a href="mailto:30688@ma-web.nl?subject=hi&body=welcome">Send Email</a> <br> <br>
+                <a href="https://www.linkedin.com/in/ties-hogenboom-4768a9156/">Linkedin</a> <br> <br>
+            </p1>
+        </div>
+    </div>
+    
 </html>
